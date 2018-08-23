@@ -388,6 +388,8 @@ input.form-application__input[type="text"]::placeholder{
 .calculator .calculator__title{
     font-size: 23px;
     font-weight: 400;
+    display: inline-block;
+    width: 65%;
 }
 .calculator .sizes,
 .calculator .thickness,
@@ -421,7 +423,7 @@ input.form-application__input[type="text"]::placeholder{
 .form-application{
     background: url(../img/banner-form-application.jpg) no-repeat center center;
     background-size: cover;
-    height: 230px;
+    /* height: 230px; */
     padding: 55px 0;
     margin-bottom: 60px;
     color: #fff;
@@ -509,7 +511,7 @@ input.form-application__input{
 }
 
 .news .news-block .news-block__desc time{
-    display: inline-block;
+    display: block;
     padding-top: 13px;
     color: #818181;
     font-size: 16px;
@@ -634,14 +636,14 @@ input.form-application__input{
     .calculator .sizes, .calculator .thickness, .calculator .materials {
         width: 170px;
     }
+    .form-application{
+        padding: 45px 25px;
+    }
     .form-application form {
         max-width: 100%;
     }
-    .form-application__input, .form-application__btn {
-        width: 93%;
-    }
     .form-application__title, .form-application__desc {
-        padding-left: 20px;
+        padding-left: 0;
     }
     .form-application__title {
         font-size: 20px;
@@ -659,4 +661,182 @@ input.form-application__input{
         width: 180px;
     }
     
+}
+
+@media only screen and (max-width: 768px) {
+    .calculator{
+        width: 80%;
+        height: auto;
+        left: 10%;
+        margin-left: 0;
+        padding: 15px 0;
+    }
+    .calculator-wrapper{
+        flex-flow: column;
+        align-items: center !important;
+    }
+    .calculator .sizes, .calculator .thickness, .calculator .materials {
+        width: 70%;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .calculator .calculator-btn{
+        width: 70%;
+        margin-top: 20px;
+    }
+    .calculator .calculator__title {
+        font-size: 20px;
+        width: 90%;
+    }
+    .goods {
+        padding-top: 370px;
+    }
+    .top-header__contacts_work{
+        display: none;
+    }
+    .about-company .about-company__btn, .news .news__btn {
+        width: 50%;
+        margin: 0 auto 40px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .header .col-12.col-sm-6.col-md-4.col-lg-5.p-0{
+        padding-right: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .top-header__contacts_address, 
+    .top-header__contacts_phone a{
+        display: none;
+    }
+    .top-header__contacts_phone span{
+        font-size: 18px;
+        font-weight: 500;
+        display: inline-block !important;
+        text-align: center;
+    }
+    .top-header__contacts_phone img{
+        display: none;
+    }
+    .top-header__contacts_phone{
+        margin-right: 0;
+        width: 100%;
+    }
+    .header .col-12.col-sm-6.col-md-4.col-lg-5.p-0{
+        padding-left: 15px !important;
+    }
+    .header .col-12.col-sm-6.col-md-5.col-lg-4.pr-0.order-2{
+        padding-right: 15px !important;
+    }
+    .top-menu{
+        display: none;
+    }
+    .top-header{
+        margin-top: 20px;
+        height: auto;
+    }
+    .menu-group-btn{
+        margin-top: 0;
+    }
+    .search-icon {
+        left: 7%;
+    }
+    .search {
+        padding-left: 11%;
+    }
+    .title-header {
+        font-size: 30px;
+        margin-top: 55px;
+    }
+    .desc-header {
+        font-size: 12px;
+    }
+    .calculator {
+        top: -140px;
+    }
+    .calculator .calculator-btn {
+        margin-bottom: 15px;
+    }
+    .goods .goods-button{
+        width: 100%;
+    }
+    .form-application__title {
+        font-size: 24px;
+        width: 76%;
+        margin: auto;
+    }
+    .form-application__desc {
+        font-size: 16px;
+        width: 76%;
+        margin: auto;
+    }
+    .privacy-rights, .privacy-rights__author {
+        font-size: 11px;
+        padding: 5px 0;
+    }
+    .privacy-rights__author{
+        flex-flow: column;
+    }
+    .privacy-rights__author p:first-child {
+        width: 36%;
+        margin-bottom: 9px;
+    }
+    .footer::after {
+        bottom: 131px;
+    }
+    .footer__contacts{
+        margin-bottom: 25px;
+    }
+    .menu-catalog {
+        width: 100%;
+    }
+    .menu-services {
+        width: 100%;
+    }
+    .sub-menu-services{
+        left: -94%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .footer-content {
+        flex-flow: column;
+    }
+    .privacy-rights__author p:first-child {
+        width: 57%;
+    }
+    .footer-menu{
+        margin-bottom: 20px;
+    }
+    .footer .social-btn-icon {
+        margin-bottom: 20px;
+    }
+    .footer .footer-content .footer__contacts .footer__contacts_address a, .footer .footer-content .footer__contacts .footer__contacts_phone a {
+        width: 45%;
+    }
+    .about-company .about-company__btn, .news .news__btn {
+        width: 100%;
+    }
+    .form-application__desc,
+    .form-application__title{
+        width: 100%;
+    }
+    .calculator .calculator__title {
+        font-size: 18px;
+        width: 100%;
+    }
+    .calculator {
+        width: 90%;
+        left: 5%;
+    }
+    .goods .goods-title {
+        font-size: 25px;
+    }
+    .title-header {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    .top-header__contacts_phone span {
+        font-size: 14px;
+    }
 }
