@@ -31,6 +31,9 @@ input:focus,
 select:focus{
     outline: none;
 }
+:focus{
+    outline: none;
+}
 
 .btn-blue{
     border: none;
@@ -50,10 +53,25 @@ select:focus{
 }
 
 /*section header*/
-.header{
+.index .header{
     background: url(../img/banner.jpg) no-repeat center center;
     background-size: cover;
     height: 630px;
+}
+.catalog .header{
+    background: url(../img/banner-2.jpg) no-repeat center center;
+    background-size: cover;
+    height: 630px;
+}
+.thank .header .top-menu,
+.thank .header .change-language span{
+    color: #000;
+}
+.thank .header .change-language__active {
+    background: #d8d9da;
+}
+.header{
+    position: relative;
 }
 
 .top-menu{
@@ -153,6 +171,49 @@ select:focus{
 .top-header__contacts_phone{
     margin-right: 65px;
 }
+/*modal*/
+.top-header__contacts_phone .modal-content{
+    border-radius: 0;
+    border: 10px solid #0070c4;
+}
+.top-header__contacts_phone .modal-content .wrapper-modal{
+    padding: 30px 80px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+.top-header__contacts_phone .modal-content .wrapper-modal h3{
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+.top-header__contacts_phone .modal-content .wrapper-modal p:first-of-type{
+    color: #000;
+    padding-bottom: 25px;
+}
+.top-header__contacts_phone .modal-content .wrapper-modal p:last-of-type{
+    font-weight: 300;
+    font-size: 12px;
+}
+.top-header__contacts_phone .modal-content .wrapper-modal a{
+    color: #000;
+    display: inline;
+}
+.top-header__contacts_phone .modal-content .wrapper-modal input{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 45px;
+    border: 1px solid #e6e6e6;
+    box-shadow: inset 1px 1px 3px rgba(154, 147, 140, 0.5);
+    padding-left: 15px;
+}
+.top-header__contacts_phone .modal-content .wrapper-modal input[type="text"]::placeholder{
+    color:#ccc;
+}
+.top-header__contacts_phone .modal-content .wrapper-modal button{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+}
 
 .menu-group-btn,
 .search,
@@ -199,16 +260,20 @@ button.menu-btn-services{
     background: #f8f8f8;
     transition: 0.5s;
 }
-.menu-services li{
-    background: #fff;
-    border: 1px solid #e0e0e0;
-    position: relative;
+.menu-catalog li:last-of-type,
+.menu-services li:last-of-type{
+    border-bottom: none;
 }
+/* .menu-services li{
+    background: #fff;
+    border-botton: 1px solid #e0e0e0;
+    position: relative;
+} */
 .menu-catalog li:hover{
     background: #fff;
 }
 .menu-services li:hover{
-    background: #54ae3f;
+    background: #ff0000;
 }
 .menu-catalog li a,
 .menu-services li a{
@@ -221,7 +286,7 @@ button.menu-btn-services{
     text-decoration: none;
     color: #fff;
 }
-.sub-menu-services{
+/* .sub-menu-services{
     position: absolute;
     left: 100%;
     top: -1px;
@@ -230,7 +295,7 @@ button.menu-btn-services{
 }
 .menu-btn-services li:hover .sub-menu-services{
     display: block;
-}
+} */
 .search{
     border: 1px solid #e0e0e0;
     border-bottom: none;
@@ -264,6 +329,57 @@ input.form-application__input[type="text"]::placeholder{
     text-align: center;
     font-size: 16px;
     margin: 15px;
+}
+/*calculator*/
+.calculator{
+    position: absolute;
+    width: 970px;
+    height: 230px;
+    bottom: -115px;
+    left: 50%;
+    margin-left: -485px;
+    border: 10px solid #0070c4;
+    background: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+.calculator .calculator__title{
+    font-size: 23px;
+    font-weight: 400;
+    display: inline-block;
+    width: 65%;
+}
+.calculator .sizes,
+.calculator .thickness,
+.calculator .materials{
+    width: 200px;
+    margin-right: 15px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.calculator .sizes h6,
+.calculator .thickness h6,
+.calculator .materials h6{
+     font-weight: 400;
+}
+.calculator .sizes select,
+.calculator .thickness select,
+.calculator .materials select{
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    padding: 0 20px;
+    color: #8f8f8f;
+}
+.calculator .calculator-btn{
+    width: 125px;
+    height: 40px;
+    transition: 0.5s;
+}
+.calculator a.calculator-btn:hover{
+    color: #fff;
+    opacity: 0.8;
 }
 
 
@@ -369,52 +485,6 @@ input.form-application__input[type="text"]::placeholder{
 }
 .goods a.goods-button:hover{
     text-decoration: none;
-    color: #fff;
-    opacity: 0.8;
-}
-/*calculator*/
-.calculator{
-    position: absolute;
-    width: 970px;
-    height: 230px;
-    top: -105px;
-    left: 50%;
-    margin-left: -485px;
-    border: 10px solid #0070c4;
-    background: #fff;
-    padding: 30px 0;
-    text-align: center;
-}
-.calculator .calculator__title{
-    font-size: 23px;
-    font-weight: 400;
-    display: inline-block;
-    width: 65%;
-}
-.calculator .sizes,
-.calculator .thickness,
-.calculator .materials{
-    width: 200px;
-    margin-right: 15px;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 30px;
-}
-.calculator .sizes select,
-.calculator .thickness select,
-.calculator .materials select{
-    width: 100%;
-    height: 40px;
-    margin-top: 5px;
-    padding: 0 20px;
-    color: #8f8f8f;
-}
-.calculator .calculator-btn{
-    width: 125px;
-    height: 40px;
-    transition: 0.5s;
-}
-.calculator a.calculator-btn:hover{
     color: #fff;
     opacity: 0.8;
 }
@@ -599,6 +669,29 @@ input.form-application__input{
     color: #adadad;
 }
 
+/*section thank-you*/
+.thank-you{
+    padding: 60px 0 30px;
+}
+.thank-you__title{
+    font-size: 33px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.thank-you__text{
+    font-size: 16px;
+    padding-bottom: 35px;
+}
+.thank-you-link{
+    width: 185px;
+    height: 50px;
+    transition: 0.5s;
+}
+a.thank-you-link:hover{
+    color: #fff;
+    opacity: 0.7;
+}
+
 @media only screen and (max-width: 1200px){
     .top-header__contacts{
         margin-left: 0;
@@ -660,6 +753,12 @@ input.form-application__input{
     .menu-services{
         width: 180px;
     }
+    .thank-you__title {
+        font-size: 28px;
+    }
+    .thank-you__text{
+        font-size: 14px;
+    }
     
 }
 
@@ -670,6 +769,7 @@ input.form-application__input{
         left: 10%;
         margin-left: 0;
         padding: 15px 0;
+        bottom: -320px;
     }
     .calculator-wrapper{
         flex-flow: column;
@@ -691,8 +791,14 @@ input.form-application__input{
     .goods {
         padding-top: 370px;
     }
+    .top-header__contacts{
+        justify-content: flex-end !important;
+    }
     .top-header__contacts_work{
         display: none;
+    }
+    .top-header__contacts_address{
+        margin-right: 40px;
     }
     .about-company .about-company__btn, .news .news__btn {
         width: 50%;
@@ -752,9 +858,6 @@ input.form-application__input{
     .desc-header {
         font-size: 12px;
     }
-    .calculator {
-        top: -140px;
-    }
     .calculator .calculator-btn {
         margin-bottom: 15px;
     }
@@ -797,13 +900,21 @@ input.form-application__input{
     .sub-menu-services{
         left: -94%;
     }
+    .thank-you-link{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 35px;
+    }
 }
 @media only screen and (max-width: 500px) {
     .footer-content {
         flex-flow: column;
     }
+    .footer__contacts {
+        width: 200px;
+    }
     .privacy-rights__author p:first-child {
-        width: 57%;
+        width: 163px;
     }
     .footer-menu{
         margin-bottom: 20px;
@@ -812,7 +923,7 @@ input.form-application__input{
         margin-bottom: 20px;
     }
     .footer .footer-content .footer__contacts .footer__contacts_address a, .footer .footer-content .footer__contacts .footer__contacts_phone a {
-        width: 45%;
+        width: 68%;
     }
     .about-company .about-company__btn, .news .news__btn {
         width: 100%;
@@ -838,5 +949,37 @@ input.form-application__input{
     }
     .top-header__contacts_phone span {
         font-size: 14px;
+    }
+    .news .news-block .news-block__desc {
+        padding-left: 14px;
+    }
+    .news .news-block .news-block__desc a {
+        font-size: 13px;
+    }
+    .news .news-block .news-block__desc a::after {
+        content: '...';
+    }
+    .news .news-block .news-block__desc a span{
+        display: none;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .about-company .about-company__title, .news .news__title {
+        font-size: 28px;
+    }
+    .form-application__title {
+        font-size: 22px;
+    }
+    .form-application__desc {
+        font-size: 14px;
+    }
+    .calculator .calculator__title {
+        font-size: 16px;
+    }
+    .menu-group-btn {
+        position: relative;
+    }
+    .menu-btn-catalog, .menu-btn-services {
+        position: static;
     }
 }
