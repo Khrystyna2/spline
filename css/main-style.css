@@ -257,8 +257,8 @@ button.menu-btn-services{
     display: flex;
     align-items: center;
     text-align: left;
-    background: #f8f8f8;
-    transition: 0.5s;
+    background: #fff;
+    transition: 0.6s;
 }
 .menu-catalog li:last-of-type,
 .menu-services li:last-of-type{
@@ -270,7 +270,7 @@ button.menu-btn-services{
     position: relative;
 } */
 .menu-catalog li:hover{
-    background: #fff;
+    background: #e0e0e0;
 }
 .menu-services li:hover{
     background: #ff0000;
