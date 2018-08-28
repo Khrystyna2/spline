@@ -276,7 +276,7 @@ button.menu-btn-services{
     position: relative;
 } */
 .menu-catalog li:hover{
-    background: #e0e0e0;
+    background: #0070c4;
 }
 .menu-services li:hover{
     background: #ff0000;
@@ -819,6 +819,9 @@ a.thank-you-link:hover{
     .calculator .sizes, .calculator .thickness, .calculator .materials {
         width: 170px;
     }
+    .jq-selectbox__select {
+        width: 170px;
+    }
     .form-application{
         padding: 45px 25px;
     }
@@ -880,6 +883,12 @@ a.thank-you-link:hover{
         width: 70%;
         margin-right: 0;
         margin-top: 20px;
+    }
+    .jq-selectbox {
+        width: 100%;
+    }
+    .jq-selectbox__select {
+        width: 100%;
     }
     .calculator .calculator-btn{
         width: 70%;
@@ -1092,5 +1101,11 @@ a.thank-you-link:hover{
     }
     .banner-catalog-prod p {
         font-size: 14px;
+    }
+    .calculator .sizes, .calculator .thickness, .calculator .materials {
+        width: 85%;
+    }
+    .calculator .calculator-btn{
+        width: 85%;
     }
 }

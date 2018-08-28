@@ -15,4 +15,6 @@ $(document).ready(function() {
 		$('.filter-category').slideToggle( "slow" );
 	});
 
+
+	$('select').styler();
 });
