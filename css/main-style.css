@@ -248,10 +248,10 @@ button.menu-btn-services{
     display: none;
     z-index: 10;
 }
-.menu-btn-catalog:hover .menu-catalog,
+/* .menu-btn-catalog:hover .menu-catalog,
 .menu-btn-services:hover .menu-services{
     display: block;
-}
+} */
 .menu-catalog li,
 .menu-services li{
     border-bottom: 1px solid #e0e0e0;
@@ -856,7 +856,6 @@ a.thank-you-link:hover{
     .catalog-section .goods-card .goods-card__price img {
         margin-right: 15px;
     }
-    
 }
 @media only screen and (max-width: 830px){
     .calculator {
