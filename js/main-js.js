@@ -5,10 +5,10 @@ $(document).ready(function() {
 	});
 
 	$('.menu-btn-catalog').click(function() {
-		$('.menu-catalog').slideToggle(1000);
+		$('.menu-catalog').slideToggle(600);
 	});
 	$('.menu-btn-services').click(function() {
-		$('.menu-services').slideToggle(1000);
+		$('.menu-services').slideToggle(600);
 	});
 
 	$('.filter').click(function() {
