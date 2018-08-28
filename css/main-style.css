@@ -671,10 +671,9 @@ input.form-application__input{
    display: inline-block;
    border-bottom: 1px dashed;
 }
-.privacy-rights__author a{
+.privacy-rights__author span{
     display: inline-block;
     border-bottom: 1px dashed;
-    color: #adadad;
 }
 
 /*section thank-you*/
