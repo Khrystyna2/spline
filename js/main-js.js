@@ -4,4 +4,8 @@ $(document).ready(function() {
 		$('#ru, #ua').toggleClass('change-language__active');
 	});
 
+	$('.filter').click(function() {
+		$('.filter-category').slideToggle( "slow" );
+	});
+
 });
