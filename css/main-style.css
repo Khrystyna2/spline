@@ -63,12 +63,15 @@ select:focus{
     background-size: cover;
     height: 630px;
 }
-.thank .header .top-menu,
-.thank .header .change-language span{
-    color: #000;
+.index .header .top-menu,
+.index .header .change-language span,
+.catalog .header .top-menu,
+.catalog .header .change-language span{
+    color: #fff;
 }
-.thank .header .change-language__active {
-    background: #d8d9da;
+.index .header .change-language__active,
+.catalog .header .change-language__active  {
+    background: #265a6f;
 }
 .header{
     position: relative;
@@ -112,7 +115,7 @@ select:focus{
     margin-left: 5px;
 }
 .change-language__active{
-    background: #265a6f;
+    background: #d8d9da;
 }
 
 .top-header{
@@ -335,16 +338,18 @@ input.form-application__input[type="text"]::placeholder{
 }
 /*calculator*/
 .calculator{
-    position: absolute;
+    /* position: absolute; */
     width: 970px;
     height: 230px;
-    bottom: -115px;
+    /* bottom: -115px;
     left: 50%;
-    margin-left: -485px;
+    margin-left: -485px; */
     border: 10px solid #0070c4;
     background: #fff;
     padding: 30px 0;
     text-align: center;
+    margin: auto;
+    margin-top: -110px;
 }
 .calculator .calculator__title{
     font-size: 23px;
@@ -389,7 +394,7 @@ input.form-application__input[type="text"]::placeholder{
 /* section goods */
 .goods,
 .catalog-section{
-    padding-top: 170px;
+    padding-top: 45px;
     padding-bottom: 80px;
     position: relative;
 }
@@ -755,6 +760,28 @@ a.thank-you-link:hover{
     color: #0070c4;
     border-left: 2px solid #0070c4; 
 }
+
+/*section cards-product*/
+.description-product{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    border-top: 1px solid #d8d9da;
+    padding-top: 15px;
+    padding-right: 15px;
+    margin-bottom: 60px;
+}
+.description-product span {
+    font-weight: 700;
+    padding-top: 10px;
+    display: inline-block;
+}
+.description-product ul{
+    padding-left: 20px;
+}
+.description-product ul li{
+    list-style-type: disc;
+}
 @media only screen and (max-width: 1200px){
     .top-header__contacts{
         margin-left: 0;
@@ -768,7 +795,7 @@ a.thank-you-link:hover{
     }
     .calculator {
         width: 900px;
-        margin-left: -450px;
+        /* margin-left: -450px; */
     }
     .privacy-rights,
     .privacy-rights__author{
@@ -787,8 +814,8 @@ a.thank-you-link:hover{
        padding-left: 35px;
    }
     .calculator {
-        width: 740px;
-        margin-left: -370px;
+        width: 90%;
+        height: auto;
     }
     .calculator .sizes, .calculator .thickness, .calculator .materials {
         width: 170px;
@@ -831,15 +858,21 @@ a.thank-you-link:hover{
     }
     
 }
+@media only screen and (max-width: 830px){
+    .calculator {
+    width: 100%;
+    height: auto;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     .calculator{
         width: 80%;
         height: auto;
-        left: 10%;
-        margin-left: 0;
-        padding: 15px 0;
-        bottom: -320px;
+        /* left: 10%;
+        margin-left: 0; */
+        padding: 25px 0;
+        /* bottom: -320px; */
     }
     .calculator-wrapper{
         flex-flow: column;
@@ -858,10 +891,10 @@ a.thank-you-link:hover{
         font-size: 20px;
         width: 90%;
     }
-    .goods,
+    /* .goods,
     .catalog-section {
         padding-top: 370px;
-    }
+    } */
     .top-header__contacts{
         justify-content: flex-end !important;
     }
