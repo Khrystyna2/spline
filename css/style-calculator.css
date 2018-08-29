@@ -1,0 +1,245 @@
+.calculator-big{
+    width: 100%;
+    border: 10px solid #0070c4;
+    background: #fff;
+    padding: 30px 60px;
+    text-align: center;
+    margin: 60px 0 80px;
+}
+.calculator-big .calculator__title{
+    font-size: 23px;
+    font-weight: 400;
+    display: inline-block;
+    width: 85%;
+}
+.calculator-big .calculator-wrapper{
+    padding-bottom: 30px;
+    margin: 0 20px;
+    position: relative;
+}
+.calculator-big .calculator-wrapper::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #e6e6e6;
+    width: 100%;
+}
+.calculator-big .sizes,
+.calculator-big .thickness,
+.calculator-big .materials{
+    margin-right: 16px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    width: 33.3%;
+}
+.calculator-big .materials{
+    margin-right: 0;
+}
+.calculator-big .sizes h6,
+.calculator-big .thickness h6,
+.calculator-big .materials h6{
+     font-weight: 400;
+     padding-bottom: 5px;
+}
+
+.calculator-big .jq-selectbox__select {
+    height: 40px;
+    width: 100%;
+}
+.calculator-big .jq-selectbox {
+    width: 100%;
+}
+.calculator-big-wrapper{
+    margin: 0 20px;
+}
+.size-roof{
+    width: 235px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8f8f8f;
+    margin-right: 55px;
+}
+.size-roof h6{
+    color: #20262c;
+    font-size: 14px;
+    padding-bottom: 8px;
+    padding-top: 22px;
+    text-align: center;
+}
+.size-roof .size-roof__gruop-input input{
+    height: 40px;
+    width: 113px;
+    padding-left: 12px;
+    margin-right: 10px;
+}
+.size-roof .size-roof__gruop-input input[type="text"]::placeholder{
+    color:#ccc;
+    font-weight: 300;
+}
+.size-roof-btn{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+.size-roof span{
+    display: inline-block;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.size-roof span:first-of-type{
+    color: #20262c;
+}
+.size-roof span:nth-of-type(2){
+    color: #20262c;
+}
+.size-roof span:nth-of-type(3){
+    color: #ff0000;
+}
+.size-roof span:last-of-type{
+    color: #0070c4;
+    margin-bottom: 35px;
+}
+
+.desc-size-roof{
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 60px;
+    text-align: left;
+}
+.desc-size-roof ul{
+    margin-top: 48px;
+    font-size: 16px;
+}
+.desc-size-roof ul li{
+    padding-bottom: 10px;
+}
+.desc-size-roof ul li p{
+    color: #8f8f8f;
+}
+.desc-size-roof ul li span{
+    font-weight: 600;
+}
+
+
+.background-field{
+    background: url(../img/Krovlia0030_400x400x80.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#field {
+    margin: 0 auto;
+  }
+  
+  td {
+    width: 52px;
+    height: 85px;
+    border: 5px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-radius: 2px;
+    background: url(../img/batary.jpg) no-repeat center center;
+    background-size: 50px 85px;
+    position: relative;
+    cursor: pointer;
+  }
+   
+  .empty {
+    background: url(../img/batery-empty.png) no-repeat center center;
+  }
+
+  .calculator-big .calculator-wrapper.change-pos::after{
+    bottom: -45px;
+    }
+    .credit{
+        font-size: 17px;
+        font-weight: 500; 
+        margin-bottom: 25px; 
+    }
+    .credit a{
+        color: #ff0000;
+        border-bottom: 1px dashed;
+        display: inline-block;
+    }
+
+@media only screen and (max-width: 768px) {
+    .calculator-big .sizes, .calculator-big .thickness, .calculator-big .materials {
+        width: 60%;
+        margin-right: 0;
+    }
+    .desc-size-roof {
+        padding-top: 40px;
+    }
+    .credit{
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .calculator-big-wrapper{
+        flex-flow: column;
+    }
+    .size-roof {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 35px;
+    }
+    .size-roof .size-roof__gruop-input input {
+        width: 50%;
+    }
+    .size-roof .size-roof__gruop-input input:last-of-type{
+        width: 50%;
+        margin-right: 0;
+    }
+    .desc-size-roof {
+        padding-top: 0;
+    }
+    .desc-size-roof ul {
+        margin-top: 25px;
+    }
+    .calculator-big .calculator-wrapper.change-pos::after{
+        border: none;
+        }
+}
+@media only screen and (max-width: 650px) {
+    .calculator-big .sizes, .calculator-big .thickness, .calculator-big .materials {
+        width: 80%;
+    }
+    .size-roof {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .calculator-big .sizes, .calculator-big .thickness, .calculator-big .materials {
+        width: 100%;
+    }
+    .size-roof {
+        width: 100%;
+    }
+    .calculator-big .calculator__title {
+        font-size: 20px;
+        width: 95%;
+    }
+    .calculator-big {
+        padding: 20px 30px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .calculator-big .calculator__title {
+        font-size: 18px;
+        width: 95%;
+    }
+    .calculator-big {
+        padding: 20px 10px;
+    }
+    .calculator-big .calculator-wrapper ,
+    .calculator-big-wrapper {
+        margin: 0 10px;
+    }
+}
