@@ -129,32 +129,31 @@
 
 
 .background-field{
-    background: url(../img/Krovlia0030_400x400x80.jpg) no-repeat center center;
+    background: #ccc url() no-repeat center center;
     background-size: cover;
+    padding: 35px;
 }
 
 #field {
     margin: 0 auto;
-  }
+}
   
-  td {
-    width: 52px;
-    height: 85px;
-    border: 5px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-radius: 2px;
-    background: url(../img/batary.jpg) no-repeat center center;
-    background-size: 50px 85px;
-    position: relative;
-    cursor: pointer;
-  }
+    td {
+        width: 52px;
+        height: 80px;
+        border: 3px solid transparent;
+        border-bottom: 10px solid transparent;
+        background: url(../img/battery.jpg) no-repeat center center;
+        position: relative;
+        cursor: pointer;
+    }
    
-  .empty {
-    background: url(../img/batery-empty.png) no-repeat center center;
-  }
+    .empty {
+        background: url(../img/battery-empty.png) no-repeat center center;
+    }
 
-  .calculator-big .calculator-wrapper.change-pos::after{
-    bottom: -45px;
+    .calculator-big .calculator-wrapper.change-pos::after{
+        bottom: -45px;
     }
     .credit{
         font-size: 17px;
