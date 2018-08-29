@@ -249,12 +249,10 @@ button.menu-btn-services{
     display: none;
     z-index: 10;
 }
-/* @media only screen and (min-width: 1024px) {
-    .menu-btn-catalog:hover .menu-catalog,
-    .menu-btn-services:hover .menu-services{
-        display: block;
-    }
-} */
+.menu-catalog.open,
+.menu-services.open{
+    display: block;
+}
 .menu-catalog li,
 .menu-services li{
     border-bottom: 1px solid #e0e0e0;
@@ -918,6 +916,9 @@ a.thank-you-link:hover{
         width: 50%;
         margin: 0 auto 40px;
     }
+    .top-header__contacts_phone {
+        margin-right: 50px;
+    }
 }
 @media only screen and (max-width: 767px){
     .header .col-12.col-sm-6.col-md-4.col-lg-5.p-0{
@@ -958,6 +959,10 @@ a.thank-you-link:hover{
     }
     .menu-group-btn{
         margin-top: 0;
+        border: none;
+    }
+    .menu-btn-services {
+        border-top: 1px solid #e0e0e0 !important;
     }
     .search-icon {
         left: 7%;

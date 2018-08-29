@@ -15,10 +15,10 @@ $(document).ready(function() {
 		}
 	   else {
 		$('.menu-btn-catalog').hover(function() {
-			$('.menu-catalog').slideToggle(300);
+			$('.menu-catalog').toggleClass('open');
 		});
 		$('.menu-btn-services').hover(function() {
-			$('.menu-services').slideToggle(300);
+			$('.menu-services').toggleClass('open');
 		});
 	   }
 	// $('.menu-btn-catalog').click(function() {
@@ -32,4 +32,5 @@ $(document).ready(function() {
 		$('.filter-category').slideToggle( "slow" );
 	});
 
+	$('select').styler();
 });
