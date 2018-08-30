@@ -87,6 +87,10 @@
     color: #fff;
     font-size: 14px;
     font-weight: 600;
+    transition: 0.5s;
+}
+.size-roof-btn:hover{
+    opacity: 0.8;
 }
 .size-roof span{
     display: inline-block;
@@ -129,8 +133,7 @@
 
 
 .background-field{
-    background: #ccc url() no-repeat center center;
-    background-size: cover;
+    background: #ccc url(../img/cover-calcul.jpg) repeat;
     padding: 35px;
 }
 

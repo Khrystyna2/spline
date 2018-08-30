@@ -96,7 +96,7 @@ select:focus{
 }
 
 .top-menu li a:hover{
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .change-language{
@@ -165,8 +165,13 @@ select:focus{
     display: inline-block;
     border-bottom: 1px dashed;
 }
+.top-header__contacts_phone a:first-of-type{
+    width: 100%;
+    border: none;
+    color: #000;
+}
 .top-header__contacts_phone a{
-    width: 83%;
+    width: 87%;
 }
 .top-header__contacts_address a{
     width: 68%;
@@ -285,10 +290,13 @@ button.menu-btn-services{
 .menu-catalog li a,
 .menu-services li a{
     color: #000;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
 }
-.menu-catalog li a:hover{
-    text-decoration: none;
-}
+.menu-catalog li a:hover,
 .menu-services li a:hover{
     text-decoration: none;
     color: #fff;
@@ -322,6 +330,12 @@ input.form-application__input[type="text"]::placeholder{
 .social-btn-icon img{
     width: 34px;
     margin: 0 8px;
+    /* transition: 0.2s ease; */
+    transform: scale(1);
+}
+.social-btn-icon img:hover{
+    transform: scale(1.04);
+    opacity: 0.8;
 }
 
 .title-header{
@@ -388,7 +402,8 @@ input.form-application__input[type="text"]::placeholder{
 }
 .calculator a.calculator-btn:hover{
     color: #fff;
-    opacity: 0.8;
+    opacity: 0.7;
+    /* transform: scale(1.04); */
 }
 
 
@@ -525,9 +540,13 @@ a.goods-button:hover{
     width: 100%;
     height: 40px;
     margin: 9px 0;
+    transition: 0.5s;
 }
 input.form-application__input{
     padding-left: 20px;
+}
+.form-application__btn:hover{
+    opacity: 0.8;
 }
 
 
@@ -663,6 +682,11 @@ input.form-application__input{
     display: inline-block;
     border-bottom: 1px dashed;
     width: 75%;
+}
+.footer .footer-content .footer__contacts .footer__contacts_phone a:first-of-type {
+    width: 100%;
+    border: none;
+    color: #fff;
 }
 
 .privacy-rights__author{
@@ -907,10 +931,18 @@ a.thank-you-link:hover{
     height: 40px;
     margin-top: 24px;
     margin-bottom: 28px;
+    transition: 0.5;
+}
+.cadrs-products__btn:hover{
+    opacity: 0.8;
 }
 .social-icons img{
     width: 20px;
     margin-left: 22px;
+    cursor: pointer;
+}
+.social-icons img:hover{
+    transform: scale(1.2);
 }
 
 .short-desc-product{
