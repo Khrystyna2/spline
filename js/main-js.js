@@ -34,4 +34,27 @@ $(document).ready(function() {
 
 	$('select').styler();
 
+
+
+	// $('.cards-products__img-small').slick({
+	// 	infinite: true,
+	// 	slidesToShow: 3,
+	// 	slidesToScroll: 1
+	//   });
+
+
+	  $('.cards-products__img').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		fade: true,
+		arrows: false,
+		asNavFor: '.cards-products__img-small'
+	  });
+	  $('.cards-products__img-small').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.cards-products__img',
+		focusOnSelect: true
+	  });
 });
