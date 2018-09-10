@@ -235,14 +235,19 @@ select:focus{
     height: inherit;
     position: relative;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .menu-btn-catalog{
     width: 55%;
 }
-button.menu-btn-services{
-    background: transparent;
-    border: none;
+.menu-btn-services{
     width: 45%;
+}
+.menu-btn-catalog i,
+.menu-btn-services i{
+    margin-right: 10px;
 }
 .menu-catalog,
 .menu-services{
@@ -254,10 +259,10 @@ button.menu-btn-services{
     display: none;
     z-index: 10;
 }
-.menu-catalog.open,
+/* .menu-catalog.open,
 .menu-services.open{
     display: block;
-}
+} */
 .menu-catalog li,
 .menu-services li{
     border-bottom: 1px solid #e0e0e0;
@@ -943,6 +948,10 @@ a.thank-you-link:hover{
 }
 .social-icons img:hover{
     transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .short-desc-product{
